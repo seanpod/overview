@@ -101,7 +101,7 @@ h2 {
 .grid {
     padding-top: 56px;
     padding-bottom: 56px;
-    background-image: url(/Images/sounds-swish.png), url(/Images/news-globe.png);
+    background-image: url(Images/sounds-swish.png), url(Images/news-globe.png);
     background-repeat: no-repeat;
     background-position: -11% 48px, 105% 100%;
     background-size: 22%, 22%;
