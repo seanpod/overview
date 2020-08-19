@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Reith";
+    src: url("./fonts/ReithSans_W_Rg.woff2") format("woff2");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Reith";
+    src: url("./fonts/BBCReithSans_W_Md.woff2") format("woff2");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Reith";
+    src: url("./fonts/ReithSans_W_Bd.woff2") format("woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Reith Serif";
+    src: url("./fonts/BBCReithSerif_W_Bd.woff2") format("woff2");
+    font-weight: bold;
+}
+
+.left {
+    margin-left: 48px;
+}
+
+.right {
+    float: right;
+    margin-right: 48px;
+}
+
+#svg-filter {
+    display: none;
+}
+
+.orb {
+    height: 40px;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+    /* background-color: brown; */
+}
+
+h1 {
+    font-family: "Reith Serif";
+    font-weight: bold;
+    font-size: 32px;
+}
+
+h2 {
+    padding-top: 4px;
+    font-family: Reith;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.salutation {
+    margin: auto;
+    padding-right: 48px;
+    padding-left: 48px;
+    margin-top: 56px;
+    max-width: 900px;
+}
+
+
+/* .soundsSwish {
+    position: relative;
+    width: 150px;
+    top: -100%;
+} */
+
+.nav {
+    margin: auto;
+    padding-right: 48px;
+    padding-left: 48px;
+    max-width: 900px;
+    margin-top: 32px;
+    height: 21px;
+    /* background-color: brown; */
+}
+
+.nav>img {
+    float: right;
+    height: 100%;
+    /* background-color: brown; */
+}
+
+.orb>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.grid {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    background-image: url(images/sounds-swish.png), url(images/news-globe.png);
+    background-repeat: no-repeat;
+    background-position: -11% 48px, 105% 100%;
+    background-size: 22%, 22%;
+}
+
+.grid-container-images {
+    padding: 32px;
+    filter: url(#svg-blur);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-gap: 16px;
+    align-items: center;
+    width: 90%;
+    max-width: 1008px;
+}
+
+.cell {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 1); */
+}
+
+.row-1 {
+    padding-top: 75%;
+}
+
+.row-2 {
+    padding-top: 75%;
+}
+
+.row-3 {
+    padding-top: 75%;
+}
+
+img {
+    object-fit: contain;
+}
+
+
+/* All iPlayer */
+
+
+/* 
+.item-1 {
+    grid-column: col-start / span 6;
+    background-image: url(images/1i.jpg);
+    transform: rotate(1deg);
+}
+
+.item-2 {
+    grid-column: col-start 7 / span 6;
+    background-image: url(images/2i.jpg);
+    transform: rotate(-1deg);
+}
+
+.item-3 {
+    grid-column: col-start / span 4;
+    background-image: url(images/3i.jpg);
+    transform: rotate(0.2deg);
+}
+
+.item-4 {
+    grid-column: col-start 5 / span 4;
+    background-image: url(images/4i.jpg);
+    transform: rotate(1deg);
+}
+
+.item-5 {
+    grid-column: col-start 9 / span 4;
+    background-image: url(images/5i.jpg);
+    transform: rotate(0.2deg);
+}
+
+.item-6 {
+    grid-column: col-start / span 3;
+    background-image: url(images/6i.jpg);
+    transform: rotate(0.5deg);
+}
+
+.item-7 {
+    grid-column: col-start 4 / span 3;
+    background-image: url(images/7i.jpg);
+    transform: rotate(-0.4deg);
+}
+
+.item-8 {
+    grid-column: col-start 7 / span 3;
+    background-image: url(images/8i.jpg);
+    transform: rotate(-0.1deg);
+}
+
+.item-9 {
+    grid-column: col-start 10 / span 3;
+    background-image: url(images/9i.jpg);
+    transform: rotate(0.8deg);
+}
+ */
+
+
+/* Mix */
+
+.item-1 {
+    grid-column: col-start / span 6;
+    /* translate: rotateZ(20); */
+    transform: rotate(0.8deg);
+    background-image: url("https://ichef.bbci.co.uk/images/ic/640x640/p087522v.jpg");
+}
+
+.item-2 {
+    grid-column: col-start 7 / span 6;
+    transform: rotate(-1deg);
+    background-image: url("https://ichef.bbci.co.uk/images/ic/1920x1080/p08ljn1c.jpg");
+}
+
+.item-3 {
+    grid-column: col-start / span 4;
+    transform: rotate(-0.6deg);
+    background-image: url("https://ichef.bbci.co.uk/images/ic/1920x1080/p08mv2mt.jpg");
+}
+
+.item-4 {
+    grid-column: col-start 5 / span 4;
+    transform: rotate(0.8deg);
+    background-image: url("https://ichef.bbci.co.uk/images/ic/320x320/p08mpzl2.jpg");
+}
+
+.item-5 {
+    grid-column: col-start 9 / span 4;
+    background-image: url(images/5s.jpg);
+    transform: rotate(-1deg);
+    background-image: url("https://ichef.bbci.co.uk/images/ic/1920x1080/p08lhpyt.jpg");
+}
+
+.item-6 {
+    grid-column: col-start / span 3;
+    background-image: url(images/6i.jpg);
+    transform: rotate(1deg);
+    background-image: url("https://ichef.bbci.co.uk/images/ic/1536x864/p08nfr67.jpg");
+}
+
+.item-7 {
+    grid-column: col-start 4 / span 3;
+    background-image: url(images/7i.jpg);
+    transform: rotate(-1deg);
+    background-image: url("https://ichef.bbci.co.uk/images/ic/1536x864/p07j51vn.jpg");
+}
+
+.item-8 {
+    grid-column: col-start 7 / span 3;
+    background-image: url(images/8s.jpg);
+    transform: rotate(1deg);
+    background-image: url("https://ichef.bbci.co.uk/images/ic/320x320/p08lj2m1.jpg");
+}
+
+.item-9 {
+    grid-column: col-start 10 / span 3;
+    background-image: url(images/9i.jpg);
+    transform: rotate(-0.5deg);
+    background-image: url("https://ichef.bbci.co.uk/images/ic/1920x1080/p01h7sc5.jpg");
+}
+
+
+/* iPlayer */
+
+
+/* 
+.item-1 {
+    grid-column: col-start / span 6;
+    background-image: url(images/1s.jpg);
+}
+
+.item-2 {
+    grid-column: col-start 7 / span 6;
+    background-image: url(images/2s.jpg);
+}
+
+.item-3 {
+    grid-column: col-start / span 4;
+    background-image: url(images/3s.jpg);
+}
+
+.item-4 {
+    grid-column: col-start 5 / span 4;
+    background-image: url(images/4s.jpg);
+}
+
+.item-5 {
+    grid-column: col-start 9 / span 4;
+    background-image: url(images/5s.jpg);
+}
+
+.item-6 {
+    grid-column: col-start / span 3;
+    background-image: url(images/6s.jpg);
+}
+
+.item-7 {
+    grid-column: col-start 4 / span 3;
+    background-image: url(images/7s.jpg);
+}
+
+.item-8 {
+    grid-column: col-start 7 / span 3;
+    background-image: url(images/8s.jpg);
+}
+
+.item-9 {
+    grid-column: col-start 10 / span 3;
+    background-image: url(images/9s.jpg);
+} */
