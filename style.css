@@ -67,8 +67,15 @@
     max-width: 900px;
 }
 
-.carousel>img {
+.carousel-image {
     height: 100%;
+}
+
+.right-button {
+    position: absolute;
+    right: -21px;
+    height: 190px;
+    transform: translateY(-270px);
 }
 
 #svg-filter {
