@@ -101,10 +101,10 @@ h2 {
 .grid {
     padding-top: 56px;
     padding-bottom: 56px;
-    background-image: url(Images/sounds-swish.png), url(Images/news-globe.png);
+    /* background-image: url(Images/sounds-swish.png), url(Images/news-globe.png); */
     background-repeat: no-repeat;
-    background-position: -11% 48px, 105% 100%;
-    background-size: 22%, 22%;
+    background-position: -5% 48px, 101% 100%;
+    background-size: 22%, 28%;
 }
 
 .grid-container-images {
@@ -135,6 +135,10 @@ h2 {
 }
 
 .row-3 {
+    padding-top: 75%;
+}
+
+.row-4 {
     padding-top: 75%;
 }
 
@@ -221,7 +225,7 @@ img {
 .item-3 {
     grid-column: col-start / span 4;
     transform: rotate(-0.6deg);
-    background-image: url("https://ichef.bbci.co.uk/images/ic/1920x1080/p08mv2mt.jpg");
+    background-image: url("https://ichef.bbci.co.uk/images/ic/1920x1080/p01h7sc5.jpg");
 }
 
 .item-4 {
@@ -247,8 +251,8 @@ img {
 .item-7 {
     grid-column: col-start 4 / span 3;
     background-image: url(images/7i.jpg);
-    transform: rotate(-1deg);
-    background-image: url("https://ichef.bbci.co.uk/images/ic/1536x864/p07j51vn.jpg");
+    transform: rotate(0.1deg);
+    background-image: url("Images/weather-square.png");
 }
 
 .item-8 {
@@ -262,7 +266,38 @@ img {
     grid-column: col-start 10 / span 3;
     background-image: url(images/9i.jpg);
     transform: rotate(-0.5deg);
-    background-image: url("https://ichef.bbci.co.uk/images/ic/1920x1080/p01h7sc5.jpg");
+    background-image: url("Images/news-rec.png");
+}
+
+
+/* row 4 */
+
+.item-10 {
+    grid-column: col-start / span 3;
+    background-image: url(images/6i.jpg);
+    transform: rotate(deg);
+    background-image: url("https://ichef.bbci.co.uk/images/ic/320x320/p08nndhp.jpg");
+}
+
+.item-11 {
+    grid-column: col-start 4 / span 3;
+    background-image: url(images/7i.jpg);
+    transform: rotate(-0.2deg);
+    background-image: url("Images/sport-rec.png");
+}
+
+.item-12 {
+    grid-column: col-start 7 / span 3;
+    background-image: url(images/8s.jpg);
+    transform: rotate(-0.1deg);
+    background-image: url("https://ichef.bbci.co.uk/images/ic/1920x1080/p08k39rv.jpg");
+}
+
+.item-13 {
+    grid-column: col-start 10 / span 3;
+    background-image: url(images/9i.jpg);
+    transform: rotate(-0.5deg);
+    background-image: url("Images/sounds-square.png");
 }
 
 
